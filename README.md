@@ -16,6 +16,10 @@ To train the model i used Unet with VGG16 backbone, but unfreezed all layers sin
 
 
 After 9 epochs the model stop learning:
+
+mymodel.compile(optimizer=tf.keras.optimizers.SGD(lr=0.1, decay=1e-6, momentum=0.0, nesterov=True),loss=tf.keras.losses.mean_squared_error,metrics=['acc'])
+hist=mymodel.fit(x_train,y_train,batch_size=32,epochs=200,validation_data=(x_valid,y_valid),callbacks=callbacks())
+
 ![08572149-9449-43C1-9FC8-091008D18F52_1_105_c](https://user-images.githubusercontent.com/51881832/153344928-7f259815-6e9d-4ccd-b321-d8d05461e9f3.jpeg)
 
 ![5A8E3F72-58CD-4ADC-800C-460AE372E0D0_1_105_c](https://user-images.githubusercontent.com/51881832/153345606-cf90ced6-6ea3-4c79-8aec-dac79278a889.jpeg)
