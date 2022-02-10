@@ -11,7 +11,7 @@ After the transform:
 
 ![C38297EF-3A2E-4CA6-86E8-0480FE93522C_1_105_c](https://user-images.githubusercontent.com/51881832/153343407-9c1cf259-845b-4dc4-ab1f-c9bc7509170a.jpeg)
 
-To train the model i used Unet with VGG16 backbone, but unfreezed all layers simce the task is different:
+To train the model i used Unet with VGG16 backbone, but unfreezed all layers since the task is different:
 ![image](https://user-images.githubusercontent.com/51881832/153343932-57d64de8-d9e1-4b49-a2fa-c314320ab4ef.png)
 
 
